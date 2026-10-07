@@ -21,13 +21,57 @@
         </ul>
 
         <h3>Listas ordenadas</h3>
-        <ol type="i">
-            <li>Primero</li>
-            <li>Segundo</li>
-            <li>Tercero</li>
-            <li>Cuarto</li>
-            <li>Quinto</li>
+        <ol type="1" start="14" reversed>
+            <li>Catorceavo</li>
+            <li>Treceavo</li>
+            <li>Doceavo</li>
+            <li>Onceavo</li>
+            <li>Décimo</li>
         </ol>
+
+        <h3>Listas de definiciones</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de Marcado de Hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hojas de Estilo en Cascada</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+        </dl>
+
+        <h3>Listas anidadas</h3>
+        <p>Desarrollo Web</p>
+        <ul>
+            <li>Front-End
+                <ol type="I">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ol>
+            </li>
+            <li>Back-End
+                <ol type="A">
+                    <li>Node.js</li>
+                    <li>MySQL</li>
+                    <li>ArchLinux</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+    <div>
+        <h2>Formularios</h2>
+        <h3>Formulario de inicio de sesión</h3>
+        <form action="/inicio_sesion" method="GET">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required placeholder="Tu contraseña debe contener números y letras">
+            <br>
+            <input type="submit">
+        </form>
     </div>
 </body>
 </html>
