@@ -72,6 +72,72 @@
             <br>
             <input type="submit">
         </form>
+
+        <hr>
+        <h3>Formulario con campo de entrada de varias líneas</h3>
+        <form action="validar.js" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Introduce tu nombre">
+            <br>
+            <label for="opinion">Comentario:</label>
+            <textarea id="opinion" name="opinion" placeholder="Tu opinión es muy importante" required rows="5" cols="40"></textarea>
+            <br>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+
+        <hr>
+        <h3>Formulario con una lista desplegable de opciones</h3>
+        <form action="/opciones.js" method="POST">
+            <label for="bebidas">Bebidas:</label>
+            <select id="bebidas" name="bebidas">
+                <option value="coca_cola">Coca-Cola</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="boing">Boing</option>
+                <option value="te">Té</option>
+                <option value="jarrito" selected>Jarrito</option>
+            </select>
+            <br>
+            <label for="postres">Postres:</label>
+            <select id="postres" name="postres">
+                <option disabled selected>Selecciona un postre</option>
+                <option value="pay_limon">Pay de Limón</option>
+                <option value="pay_fresa">Pay de Fresa</option>
+                <option value="flan">Flan</option>
+                <option value="gelatina">Gelatina</option>
+                <option value="pastel">Pastel</option>
+            </select>
+            <br>
+            <input type="submit">
+        </form>
+        <h3>Formulario con distintos campos de datos</h3>
+        <form action="datos.php" method="POST">
+            <fieldset>
+                <legend>Nombre Completo</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="ap_paterno">Ap. Paterno:</label>
+                <input type="text" id="ap_paterno" name="ap_paterno" required>
+                <br>
+                <label for="ap_materno">Ap. Materno:</label>
+                <input type="text" id="ap_materno" name="ap_materno" required>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required min="18" max="90">
+                <br>
+                <label for="num_cuenta">Número de Cuenta:</label>
+                <input type="text" id="num_cuenta" name="num_cuenta" required pattern="[0-9]{9}" title="El número de cuenta debe contener 9 dígitos" maxlength="9">
+                <br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 </html>
