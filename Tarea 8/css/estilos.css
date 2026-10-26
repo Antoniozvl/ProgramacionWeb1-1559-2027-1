@@ -1,0 +1,22 @@
+/*Estilos para un selector de un elemento*/
+h2 {
+    color: rgb(248, 33, 69);
+}
+
+/*Estilos para un selector de una clase*/
+.color-h2 {
+    color: purple;
+}
+
+/*Estilos para un selector de un identificador*/
+#color-h1 {
+    color: white;
+}
+
+.color-estilosinternos {
+    color: gray;
+}
+
+#bg-header {
+    background-color: black;
+}
