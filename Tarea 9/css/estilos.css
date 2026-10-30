@@ -52,3 +52,22 @@
 .lime {
     color: lime;
 }
+
+.borde {
+    /* border-style: dotted;
+    border-color: red;
+    border-width: 10px; */
+    border: 10px dotted red;
+}
+
+.borde-interno {
+    border: 2px solid darkred;
+}
+
+.lineal {
+    background: linear-gradient(to bottom, red, blue);
+}
+
+.radial {
+    background: radial-gradient(ellipse, violet, red);
+}
