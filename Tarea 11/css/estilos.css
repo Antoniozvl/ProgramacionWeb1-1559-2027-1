@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, "Helvetica Neue", sans-serif;
+}
+
+#encabezado {
+    background-color: black;
+    color: white;
+    /* El relleno o padding: espacio entre el contenido del elemento y su borde 
+    se aplican los valores en sentido horario: top, right, bottom, left 
+    1valor: trbl 2valores: tb, rl 3valores: t,rl,b 4valores: t,r,b,l*/
+    padding: 15px 5px 150px 60px;
+
+    border: 2px solid rgb(0, 195, 255);
+    /*border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+}
