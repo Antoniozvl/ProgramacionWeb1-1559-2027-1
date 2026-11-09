@@ -8,10 +8,44 @@ body {
     /* El relleno o padding: espacio entre el contenido del elemento y su borde 
     se aplican los valores en sentido horario: top, right, bottom, left 
     1valor: trbl 2valores: tb, rl 3valores: t,rl,b 4valores: t,r,b,l*/
-    padding: 15px 5px 150px 60px;
+    padding: 15px;
 
-    border: 2px solid rgb(0, 195, 255);
+    /* El margen es el espacio que hay entre un elemento HTML y el resto de los elementos HTML a su alrededor */
+    margin: 15px 5px;
+
+    /* Es el contorno visual alrededor de nuestro elemento HTML (dentro de él podemos encontrar el contenido del elemento y su relleno)
+    valores(solid, dotted, dashed, double, groove, ridge, inset, outset, hidden, none) */
+    border: 10px ridge rgb(0, 195, 255);
+    border-top-style: double;
+    border-left-color: red;
+    border-right-color: red;
+    border-bottom-width: 2px;
+    border-radius: 10%;
     /*border-width: 2px;
     border-style: solid;
     border-color: red; */
+    /* box-shadow: Se puede utilzar para crear efectos de sombra alrededor del borde de un elemento, se debe especificar los valores: desplazamiento horizontal,
+    desplazamiento vertical, radio de desenfoque, radio de propagación, color */
+    box-shadow: -5px -5px 10px 5px red;
+}
+
+.introduccion {
+    border: 2px solid gold;
+    background-color: black;
+    padding: 5px;
+    color: gray;
+}
+
+.introduccion p {
+    width: 300px;
+    height: 150px;
+    border: 2px dotted gold;
+}
+
+.introduccion span {
+    width: 300px;
+    height: 150px;
+    border: 2px dotted red;
+    padding: 10px;
+    margin: 50px;
 }
