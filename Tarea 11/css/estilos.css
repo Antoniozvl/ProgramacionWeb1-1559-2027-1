@@ -27,6 +27,7 @@ body {
     /* box-shadow: Se puede utilzar para crear efectos de sombra alrededor del borde de un elemento, se debe especificar los valores: desplazamiento horizontal,
     desplazamiento vertical, radio de desenfoque, radio de propagación, color */
     box-shadow: -5px -5px 10px 5px red;
+    text-decoration: underline;
 }
 
 .introduccion {
@@ -40,6 +41,8 @@ body {
     width: 300px;
     height: 150px;
     border: 2px dotted gold;
+    box-sizing:border-box;
+    font-family: "Agrave Pro";
 }
 
 .introduccion span {
@@ -48,4 +51,43 @@ body {
     border: 2px dotted red;
     padding: 10px;
     margin: 50px;
+}
+
+.texto-fuente {
+    background-color: black;
+    color: white;
+}
+
+.propiedades-texto h2 {
+    border: 2px solid red;
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 3px gray;
+    font-family: "Black Ops One";
+}
+
+.propiedades-texto p {
+    padding: 8px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 15px;
+}
+
+.propiedades-fuentes h2 {
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 3px gray;
+    font-family: "Times New Roman";
+    font-size: 35px;
+}
+
+.propiedades-fuentes p {
+    padding: 8px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-style: oblique;
 }
