@@ -1,0 +1,157 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, black, rgb(44, 0, 44));
+    color: white;
+}
+
+#encabezado {
+    border: 0.2rem solid pink;
+    background-color: rgba(48, 0, 78, 0.948);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo {
+    border: 0.2rem solid greenyellow;
+    border-radius: 45%;
+    width: 20%;
+    height: 20rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+}
+
+#encabezado h1 {
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem pink;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+#navegacion ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#contenedor-flexible {
+    border: 0.2rem solid gold;
+    padding: 1rem;
+    /* display: flex vuelve a un contenedor flexible */
+    display: flex;
+    /* flex-direction: define el eje principal o main axis en el que va a trabajar flexbox (row, column, row-reverse, column-reverse) */
+    flex-direction: row;
+    /* justify-content: permite distribuir el espacio de los objetos flexibles a lo largo del eje principal o main axis */
+    justify-content: space-evenly;
+    /* align-items: define el eje cruzado o cross axis con el que va a trabajar flexbox */
+    align-items: start;
+}
+
+.img2 {
+    border: 0.2rem solid red;
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img3 {
+    border: 0.2rem solid white;
+    width: 30rem;
+    height: 25rem;
+    margin: 0.5rem;
+}
+
+.img3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img4 {
+    border: 0.2rem solid blue;
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.img4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img5 {
+    border: 0.2rem solid violet;
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.img5 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Consultas de medios (medias queries) 
+Sirve para definir los estilos a elementos HTML según el tamaño de la pantalla de nuestro dispositivo, gracias a esto se proporciona
+una herrramienta que nos sirve para la creación de páginas web responsivas o adaptables.
+Si se definen varias consultas de medios, se deben poner en forma descendente según la medida del dispositivo.
+Móviles(<=480px), Tablets(481px - 960px), PC(>960px - 1280px) */
+
+@media screen and (max-width: 960px) {
+    #encabezado h1 {
+        font-size: 3rem;
+        left: 32%;
+        top: 10rem;
+    }
+
+    #navegacion ul {
+        font-size: 1.8rem;
+        top: 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #encabezado h1 {
+        font-size: 3rem;
+        left: 27%;
+        top: 10rem;
+    }
+
+    .logo {
+        width: 15%;
+        height: 10rem;
+        top: 8rem;
+        left: 2rem;
+    }
+
+    .img2, .img4, .img5 {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .img3 {
+        width: 20rem;
+        height: 17rem;
+    }
+
+    #navegacion ul {
+        font-size: 1.5rem;
+    }
+}
